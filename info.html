@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 0;
+            }
+            html {
+                box-sizing: border-box;
+            }
+            *, *:before, *:after {
+                box-sizing: inherit;
+            }
+            .colums {
+                float: left;
+                width: 33.3%;
+                margin: 16px;
+                padding: 0 8px;
+            
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                margin: 8px;
+            }
+            .about-section {
+                padding: 50px;
+                text-align: center;
+                background-color: #474e5d;
+                color: white;
+            }
+            .container {
+                padding: 0 16px;
+            }
+            .container::after, .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .title {
+                color: grey;
+            }
+            .button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+            }
+            .button:hover {
+                background-color: #555;
+            }
+            @media screen and (max-width: 650px) {
+                .colums {
+                    width: 100%;
+                    display: block;
+                }
+            }
+    </style>
+    </head>
+    <body>
+        <nav class="w3-bar w3-gray">
+            <a href="index.html" class="w3-button w3-bar-item">Home</a>
+            <a class="w3-bar-item">                    |                    </a>
+            <a href="preise.html" class="w3-button w3-bar-item">Preis</a>
+            <a href="info.html" class="w3-button w3-bar-item">Info & Kontakt</a>
+        </nav> 
+        <div class="about-section">
+            <h1>info seite</h1>
+            <p>info über uns</p>
+        </div>
+
+        <h2 style="text-align:center">Die Ersteller</h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="alina.jpg" style="width: 200px;">
+                    <div class="container">
+                        <h2>Alina</h2>
+                        <p class="title">Erfinderin und CEO</p>
+                        <p>text hier</p>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkHhlvKHdfCZpcNntXZHNCBBZPGGZTvQsfkHmNfBmBKVDJgdWfcCmdpJbtqQQlqzsSWmQf">nikokom562@gmail.com</a>
+    </body>
+</html>

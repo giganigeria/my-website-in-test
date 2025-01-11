@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+    
+<!---------------------------------------------NAVIGATION------------------------------------------------------>
+<nav class="w3-bar w3-gray">
+    <a href="index.html" class="w3-button w3-bar-item">Home</a>
+    <a class="w3-bar-item">                    |                    </a>
+    <a href="preise.html" class="w3-button w3-bar-item">Preis</a>
+    <a href="info.html" class="w3-button w3-bar-item">Info & Kontakt</a>
+    <a class="w3-right w3-bar-item"><em><strong>Sigma Productions</strong></em></a>
+</nav> 
+
+<!---------------------------------------------SLIDESHOW------------------------------------------------------->
+<section>
+    <img class="mySlides" src="photo1.JPG" style="width: 100%;" >
+    <img class="mySlides" src="photo2.JPG" style="width: 100%;" >
+    <img class="mySlides" src="photo3.JPG" style="width: 100%;" >
+</section>
+
+<!-------------------------------------------DESCRIPTION------------------------------------------------------->
+<section class="w3-container w3-center w3-content" style="max-width: 600px;">
+    <h2 class="w3-wide"><em>ALINA AK</em></h2>
+    <p class="w3-opacity">Kaufen sie Portraite ihrer wahl</p>
+    <p class="w3-justify">text deskription oder etwas hier schreiben</p>
+</section>
+
+<!--------------------------------------------IMAGES----------------------------------------------------------->
+<section class="w3-row-padding"></section>
+
+<script>
+    // automatic slideschow
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }
+</script>
+
+</body>
+</html>
+
+
